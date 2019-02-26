@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your awesome "kiosko" interface</title>
+</head>
+<body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+<script>
+  var socket = io('http://localhost:1337')
+  socket.on('connect', function () {
+      console.log('socket connection created!')
+  })
+
+  socket.on('newData', function (data) {
+      console.log('Retrieved data from backend!')
+      console.log(data)
+  })
+</script>
+</body>
+</html>
