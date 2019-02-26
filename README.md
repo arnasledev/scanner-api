@@ -16,7 +16,7 @@ CURL or just send typical `POST` request to `http://localhost:1337`:
 
 - endpoint: `/api/scan`
 - method `POST`
-- params `{id}`, example: 1. (***available 1-100***)
+- params `{scanId}`, example: 1. (***available 1-100***)
 - responses:
     - **200** - ok
         - `{message: 'Data processed'}`
